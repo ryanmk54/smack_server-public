@@ -2,7 +2,13 @@ require 'base64'
 class ApiController < ActionController::API
   def receive_project_input
     @project = Project.new params[:id],params[:options], params[:code]
-    render :json => {:id => params[:id], :result => 'pending'}
+    # render :json => {:id => params[:id], :result => 'pending'}
+    files = Zip.unzip_project project.@code, project.@id
+    output, err, s = Open3.capture3('SMACK', :stdin_data => files, :binmode => true)
+    if s.success?
+      project.@results = output
+    end
+    render :json => {:id => params[:id], :result => output }
     # SmackJob.perform project
   end
 
