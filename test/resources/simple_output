@@ -1,0 +1,98 @@
+SMACK program verifier version 1.6.0
+simple.c:2:10: error: expected "FILENAME" or <FILENAME>
+#include smack.h
+         ^
+simple.c:57:5: warning: implicit declaration of function 'assert' is invalid in C99 [-Wimplicit-function-declaration]
+    assert(x <= 0 || x > MAX_LIMIT);
+    ^
+simple.c:60:3: error: unknown type name 'ops'
+  ops += deposit(acc, y);
+  ^
+simple.c:60:7: error: expected identifier or '('
+  ops += deposit(acc, y);
+      ^
+simple.c:61:10: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+         ^
+simple.c:61:22: error: a parameter list without types is only allowed in a function definition
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+                     ^
+simple.c:61:27: error: expected ')'
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+                          ^
+simple.c:61:9: note: to match this '('
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+        ^
+simple.c:61:3: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+  ^
+simple.c:62:3: error: unknown type name 'ops'
+  ops += deposit(acc, z);
+  ^
+simple.c:62:7: error: expected identifier or '('
+  ops += deposit(acc, z);
+      ^
+simple.c:63:10: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+         ^
+simple.c:63:22: error: a parameter list without types is only allowed in a function definition
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+                     ^
+simple.c:63:27: error: expected ')'
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+                          ^
+simple.c:63:9: note: to match this '('
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+        ^
+simple.c:63:3: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+  ^
+simple.c:64:3: error: unknown type name 'ops'
+  ops += withdraw(acc, z);
+  ^
+simple.c:64:7: error: expected identifier or '('
+  ops += withdraw(acc, z);
+      ^
+simple.c:65:10: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+         ^
+simple.c:65:22: error: a parameter list without types is only allowed in a function definition
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+                     ^
+simple.c:65:27: error: expected ')'
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+                          ^
+simple.c:65:9: note: to match this '('
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+        ^
+simple.c:65:3: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  assert(get_balance(acc) >=0 && get_balance(acc) <= MAX_LIMIT);
+  ^
+simple.c:66:10: error: unknown type name 'ops'
+  assert(ops < 3 || get_balance(acc) == y);
+         ^
+simple.c:66:14: error: expected ')'
+  assert(ops < 3 || get_balance(acc) == y);
+             ^
+simple.c:66:9: note: to match this '('
+  assert(ops < 3 || get_balance(acc) == y);
+        ^
+simple.c:66:3: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  assert(ops < 3 || get_balance(acc) == y);
+  ^
+simple.c:67:3: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  free(acc);
+  ^
+simple.c:67:8: error: a parameter list without types is only allowed in a function definition
+  free(acc);
+       ^
+simple.c:68:3: error: expected identifier or '('
+  return;
+  ^
+simple.c:69:1: error: extraneous closing brace ('}')
+}
+^
+simple.c:72:11: warning: implicit declaration of function '__VERIFIER_nondet_int' is invalid in C99 [-Wimplicit-function-declaration]
+  int x = __VERIFIER_nondet_int();
+          ^
+10 warnings and 18 errors generated.

@@ -1,28 +1,63 @@
 require 'base64'
-require 'project'
-require 'open3'
+require 'rest-client'
 class ApiController < ActionController::API
+  #def receive_project_input
+  #  files = Base64.strict_decode64( params[:code] )
+  #  file = File.new('input.c', 'a+')
+  #  file.write files
+  #  file.close
+  #  r, w = IO.pipe
+  #  pid = spawn("smack #{File.absolute_path(file.path)}", :out => w)
+  #  Process.waitpid( pid )
+  #  w.close
+  #  render :json => {:id => params[:id], :result => Base64.strict_encode64( r.read ) }
+  #  r.close
+ 
+    # SmackJob.perform project
+  #end
+
   def receive_project_input
-    # project = Project.new( params[:id],params[:options], params[:code] )
-    # render :json => {:id => params[:id], :result => 'pending'}
-    files = Base64.decode64( params[:code] )
-    #filenames = files.basename
-    #output = File.new("output_#{params[:id]}", w)
-    pid = spawn("smack input.c", :in =>files )
-    Process.waitpid( pid )  
+    begin
+      RestClient.post(
+            "#{request.remote_ip}:3000/job_started",
+          {
+          :id => params[:id],
+          :output => 'pending',
+          # TODO: come up with way to estimate time
+          :eta => 5000
+          }.to_json,
+          {content_type: :json, accept_headers: :json}
+       )
+     rescue => e
+       puts 'failed to send job_started'
+       puts e.message
+     end
+
+    files = Base64.strict_decode64( params[:code] )
+    file = File.new('input.c', 'a+')
+    file.write files
+    file.close
+    r, w = IO.pipe
+    pid = spawn("smack #{File.absolute_path(file.path)}", :out => w)
+    Process.waitpid( pid )
+    w.close
+    render :json => {:id => params[:id], :output => Base64.strict_encode64( r.read ) }
+    r.close
+ 
     # SmackJob.perform project
   end
 
   def send_project_output project
     require 'rest-client'
-    response = RestClient.post(
-        'some_url',
-      {
-      :id => project.id,
-      :result => 'done',
-      :output => Base64.encode64(project.output)
-      }.to_json,
-      {content_type: :json, accept_headers: :json}
-    )
+    end
+
+  private
+  def extract_project filepath
+    Zip::ZipFile.open(file_path) { |zip_file|
+      zip_file.each { |f|
+      f_path=File.join("destination_path", f.name)
+      FileUtils.mkdir_p(File.dirname(f_path))
+      zip_file.extract(f, f_path) unless File.exist?(f_path)
+    }} 
   end
 end
