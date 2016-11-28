@@ -1,15 +1,15 @@
 require 'base64'
-require 'zip'
+require 'project'
+require 'open3'
 class ApiController < ActionController::API
   def receive_project_input
-    @project = Project.new( params[:id],params[:options], params[:code] )
+    # project = Project.new( params[:id],params[:options], params[:code] )
     # render :json => {:id => params[:id], :result => 'pending'}
-    files = Zip::File.open(project.code)
-    output, err, s = Open3.capture3('SMACK', :stdin_data => files, :binmode => true)
-    if s.success?
-      project.results = output
-    end
-    render :json => {:id => params[:id], :result => output }
+    files = Base64.decode64( params[:code] )
+    #filenames = files.basename
+    #output = File.new("output_#{params[:id]}", w)
+    pid = spawn("smack input.c", :in =>files )
+    Process.waitpid( pid )  
     # SmackJob.perform project
   end
 

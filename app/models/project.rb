@@ -1,5 +1,5 @@
 class Project
-  def initialize id, options, code
+  def initialize( id, options, code )
     @id = id
     @options = options
     @code = code
