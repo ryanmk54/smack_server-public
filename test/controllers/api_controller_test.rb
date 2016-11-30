@@ -40,21 +40,12 @@ class APIControllerTest < ActionDispatch::IntegrationTest
     body = JSON.parse(response.body)
     assert_equal '2', body['id']
     output =  Base64.strict_decode64( body['output'] )
-    puts 'output'
-    puts output
     actual_output = Zip::InputStream.open(StringIO.new(output)) { |io| 
       io.get_next_entry
       io.read
      }
-    puts 'actual_output'
-    puts actual_output
     Dir.chdir(base_directory)
     expected_output = File.open('test/resources/simple_output') { |file| file.read}
     assert_equal actual_output.to_s, expected_output
   end
-
-  def make_zip
-
-  end
-
 end
