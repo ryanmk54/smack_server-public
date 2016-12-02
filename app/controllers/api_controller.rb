@@ -1,39 +1,41 @@
 require 'base64'
 require 'rest-client'
 require 'zip'
+require 'zlib'
+require 'stringio'
+
+class StringIO
+  def path
+  end
+end
 
 class ApiController < ActionController::API
-
   def receive_project_input
-    begin
-      RestClient.post(
-            "#{request.remote_ip}:3000/job_started",
-          {
-          :id => params[:id],
-          :output => 'pending',
-          # TODO: come up with way to estimate time
-          :eta => 5000
-          }.to_json,
-          {content_type: :json, accept_headers: :json}
-       )
-     rescue => e
-       puts 'failed to send job_started'
-       puts e.message
-     end
+    puts "received request from #{request.remote_ip}#"
+    id = params[:id]
+    render :json => {
+	:id => id,
+	:output => 'pending',
+	:eta => 5000
+    }    
+    puts "project id is #{id}"
     Dir.chdir('/home/ubuntu/projects')
-    Dir.mkdir(params[:id])
-    Dir.chdir(params[:id])
-    zipped_contents = Base64.strict_decode64( params[:code] )
-    
-    Zip::InputStream.open(StringIO.new(zipped_contents)) { |zio|
-      while( entry = zio.get_next_entry)
-        File.open(entry.name, 'a+') { |f| f.puts zio.read }
-      end
+    Dir.mkdir(id.to_s)
+    Dir.chdir(id.to_s)
+    zipped_contents = Base64.strict_decode64( params[:input] )
+    file = open('content', 'a+:ASCII-8BIT')
+    file.write(zipped_contents)
+    file.close
+    Zip::File.open('content') { |zipfile|
+      Zip::File.foreach('content') { |entry|
+        zipfile.extract(entry, entry.name)    
+      }
     }
-    
+    File.delete('content')
     filenames = Dir.entries(Dir.pwd)
     filenames.delete('.')
     filenames.delete('..')
+    filenames.delete('__MACOSX') if filenames.include?('__MACOSX')    
 
     r, w = IO.pipe
     
@@ -45,12 +47,19 @@ class ApiController < ActionController::API
     output_string = r.read
     r.close
 
-    Zip::File.open('output', Zip::File::CREATE) { |zipfile|
-      zipfile.get_output_stream('results.txt') { |f| f.puts output_string }
-    }
-    encoded_output = Base64.strict_encode64 File.open('output', 'rb') { |f| f.read }
-
-    render :json => {:id => params[:id], :output => encoded_output }
+    begin
+      post_url = "#{request.remote_ip}:3000/projects/#{id}/receive_service_output"
+      puts "posting to #{post_url}"
+      puts params[:id]
+      RestClient.post(post_url,
+	{
+	  :id => params[:id],
+	  :output => output_string
+	}.to_json, {content_type: :json, accept_headers: :json})
+    rescue => e
+	puts 'Error while sending service output'
+        puts e.message
+    end
   end
 end
 

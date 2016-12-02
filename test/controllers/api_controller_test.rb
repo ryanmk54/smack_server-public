@@ -35,7 +35,7 @@ class APIControllerTest < ActionDispatch::IntegrationTest
     f = open('contents.zip', 'a+')
     encoded_project = Base64.strict_encode64(f.read)
     f.close
-    get '/receive_project_input', params: {'id': 2, 'options': {}, 'code': encoded_project }
+    post '/job_started', params: {'id': 2, 'options': {}, 'code': encoded_project }
     assert_equal 200, status
     body = JSON.parse(response.body)
     assert_equal '2', body['id']

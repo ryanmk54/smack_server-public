@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get '/receive_project_input', to: 'api#receive_project_input'
+  post '/job_started', to: 'api#receive_project_input'
 
   # namespace :api, defaults: {format: :json } do
   #
