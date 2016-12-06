@@ -3,6 +3,7 @@ require 'rest-client'
 require 'zip'
 require 'zlib'
 require 'stringio'
+require 'fileutils'
 
 class StringIO
   def path
@@ -10,6 +11,9 @@ class StringIO
 end
 
 class ApiController < ActionController::API
+  before_action :prime
+  after_action :remove_project_directory
+
   def receive_project_input
     puts "received request from #{request.remote_ip}#"
     id = params[:id]
@@ -36,7 +40,7 @@ class ApiController < ActionController::API
     filenames.delete('.')
     filenames.delete('..')
     filenames.delete('__MACOSX') if filenames.include?('__MACOSX')    
-
+    filenames.each { |f| puts f }
     r, w = IO.pipe
     
     pid = spawn("smack #{filenames.join(' ')};", :out => w)
@@ -60,6 +64,16 @@ class ApiController < ActionController::API
 	puts 'Error while sending service output'
         puts e.message
     end
+    Dir.chdir(Rails.root)
+    
+  end
+  
+  def prime
+    FileUtils.mkdir("/home/ubuntu/projects#{params[:id]}") unless File.directory?("/home/ubuntu/projects#{params[:id]}")
+  end
+
+  def remove_project_directory
+    FileUtils.rm_rf("/home/ubuntu/projects/#{params[:id]}")
   end
 end
 
