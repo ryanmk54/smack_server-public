@@ -24,7 +24,11 @@ class Project
       if filenames.include?( filename )
         filenames.delete( filename )
       end
+      if /.txt$/ === filename
+        filenames.delete(filename)
+      end    
     }
+
     filenames = filenames.map { |f| File.join(self.path, f) }
     filenames.each { |f| puts f }
     r, w = IO.pipe
