@@ -1,0 +1,1689 @@
+=> Booting Puma
+=> Rails 5.0.0.1 application starting in development on http://ec2-52-53-187-90.us-west-1.compute.amazonaws.com:3000
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.6.2 (ruby 2.3.1-p112), codename: Sleepy Sunday Serenity
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://ec2-52-53-187-90.us-west-1.compute.amazonaws.com:3000
+Use Ctrl-C to stop
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 02:57:00 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>95, "options"=>nil, "input"=>"UEsDBBQACAAIANeUgUkAAAAAAAAAAAAAAAAIABAAc2ltcGxlLmNVWAwArNBAWKbQQFj1ARQA09dS8EjNyclXCM8vyklRKCjKTy9KzFXQ0ufiUs7MS84pTUnl4spNzMzT0OSq5lIAgoKizLySNA0lJG1KmtZctVwAUEsHCPRPLq9CAAAASwAAAFBLAwQKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAQAF9fTUFDT1NYL1VYDAC20EBYttBAWPUBFABQSwMEFAAIAAgA15SBSQAAAAAAAAAAAAAAABMAEABfX01BQ09TWC8uX3NpbXBsZS5jVVgMAKzQQFim0EBY9QEUAGNgFWNnYGJg8E1MVvAPVohQgAKQGAMnEBsxMDCaAWkgnzGDgSjgGBISBGGBdTwA4g40JUxQcX4GBvHk/Fy9xIKCnFS9kNSKEte85PyUzLx0iLr3QFzJwGCOUJObWpKYkliSaJXt6+KTmJSaE5+ZXJ5SkV6VkmKUaZqfUVWUlZRhlp5YlJlYCtRcWpKma2FtaGxiZGhuaWHy6cXOzwlRkQ7OBc+vibm/vNxXd+prf1TphSV8QnIn1BliKwzmtW2zCf7xOsG26c53pRUzpTa4CQVmzTZynfN0Az/bpP8q193O2louv1NjnM3Lo7LXIFzz/NcrKSL/nl88ssZ8doTKkmnXlrat2XIpt+DItkju9lNfzwWt1ZhueQ8AUEsHCBrkU4cZAQAAaAEAAFBLAQIVAxQACAAIANeUgUn0Ty6vQgAAAEsAAAAIAAwAAAAAAAAAAECkgQAAAABzaW1wbGUuY1VYCACs0EBYptBAWFBLAQIVAwoAAAAAAOGUgUkAAAAAAAAAAAAAAAAJAAwAAAAAAAAAAED9QYgAAABfX01BQ09TWC9VWAgAttBAWLbQQFhQSwECFQMUAAgACADXlIFJGuRThxkBAABoAQAAEwAMAAAAAAAAAABApIG/AAAAX19NQUNPU1gvLl9zaW1wbGUuY1VYCACs0EBYptBAWFBLBQYAAAAAAwADANIAAAApAgAAAAA=", "api"=>{"id"=>95, "options"=>nil, "input"=>"UEsDBBQACAAIANeUgUkAAAAAAAAAAAAAAAAIABAAc2ltcGxlLmNVWAwArNBAWKbQQFj1ARQA09dS8EjNyclXCM8vyklRKCjKTy9KzFXQ0ufiUs7MS84pTUnl4spNzMzT0OSq5lIAgoKizLySNA0lJG1KmtZctVwAUEsHCPRPLq9CAAAASwAAAFBLAwQKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAQAF9fTUFDT1NYL1VYDAC20EBYttBAWPUBFABQSwMEFAAIAAgA15SBSQAAAAAAAAAAAAAAABMAEABfX01BQ09TWC8uX3NpbXBsZS5jVVgMAKzQQFim0EBY9QEUAGNgFWNnYGJg8E1MVvAPVohQgAKQGAMnEBsxMDCaAWkgnzGDgSjgGBISBGGBdTwA4g40JUxQcX4GBvHk/Fy9xIKCnFS9kNSKEte85PyUzLx0iLr3QFzJwGCOUJObWpKYkliSaJXt6+KTmJSaE5+ZXJ5SkV6VkmKUaZqfUVWUlZRhlp5YlJlYCtRcWpKma2FtaGxiZGhuaWHy6cXOzwlRkQ7OBc+vibm/vNxXd+prf1TphSV8QnIn1BliKwzmtW2zCf7xOsG26c53pRUzpTa4CQVmzTZynfN0Az/bpP8q193O2louv1NjnM3Lo7LXIFzz/NcrKSL/nl88ssZ8doTKkmnXlrat2XIpt+DItkju9lNfzwWt1ZhueQ8AUEsHCBrkU4cZAQAAaAEAAFBLAQIVAxQACAAIANeUgUn0Ty6vQgAAAEsAAAAIAAwAAAAAAAAAAECkgQAAAABzaW1wbGUuY1VYCACs0EBYptBAWFBLAQIVAwoAAAAAAOGUgUkAAAAAAAAAAAAAAAAJAAwAAAAAAAAAAED9QYgAAABfX01BQ09TWC9VWAgAttBAWLbQQFhQSwECFQMUAAgACADXlIFJGuRThxkBAABoAQAAEwAMAAAAAAAAAABApIG/AAAAX19NQUNPU1gvLl9zaW1wbGUuY1VYCACs0EBYptBAWFBLBQYAAAAAAwADANIAAAApAgAAAAA="}}
+received request from 155.99.166.24#
+project id is 95
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/95/simple-_o5tZr.bc simple.c
+clang returned non-zero.
+posting to 155.99.166.24:3000/projects/95/receive_service_output
+95
+Completed 200 OK in 264ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:04:58 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>96, "options"=>nil, "input"=>"UEsDBBQACAAIANeUgUkAAAAAAAAAAAAAAAAIABAAc2ltcGxlLmNVWAwArNBAWKbQQFj1ARQA09dS8EjNyclXCM8vyklRKCjKTy9KzFXQ0ufiUs7MS84pTUnl4spNzMzT0OSq5lIAgoKizLySNA0lJG1KmtZctVwAUEsHCPRPLq9CAAAASwAAAFBLAwQKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAQAF9fTUFDT1NYL1VYDAC20EBYttBAWPUBFABQSwMEFAAIAAgA15SBSQAAAAAAAAAAAAAAABMAEABfX01BQ09TWC8uX3NpbXBsZS5jVVgMAKzQQFim0EBY9QEUAGNgFWNnYGJg8E1MVvAPVohQgAKQGAMnEBsxMDCaAWkgnzGDgSjgGBISBGGBdTwA4g40JUxQcX4GBvHk/Fy9xIKCnFS9kNSKEte85PyUzLx0iLr3QFzJwGCOUJObWpKYkliSaJXt6+KTmJSaE5+ZXJ5SkV6VkmKUaZqfUVWUlZRhlp5YlJlYCtRcWpKma2FtaGxiZGhuaWHy6cXOzwlRkQ7OBc+vibm/vNxXd+prf1TphSV8QnIn1BliKwzmtW2zCf7xOsG26c53pRUzpTa4CQVmzTZynfN0Az/bpP8q193O2louv1NjnM3Lo7LXIFzz/NcrKSL/nl88ssZ8doTKkmnXlrat2XIpt+DItkju9lNfzwWt1ZhueQ8AUEsHCBrkU4cZAQAAaAEAAFBLAQIVAxQACAAIANeUgUn0Ty6vQgAAAEsAAAAIAAwAAAAAAAAAAECkgQAAAABzaW1wbGUuY1VYCACs0EBYptBAWFBLAQIVAwoAAAAAAOGUgUkAAAAAAAAAAAAAAAAJAAwAAAAAAAAAAED9QYgAAABfX01BQ09TWC9VWAgAttBAWLbQQFhQSwECFQMUAAgACADXlIFJGuRThxkBAABoAQAAEwAMAAAAAAAAAABApIG/AAAAX19NQUNPU1gvLl9zaW1wbGUuY1VYCACs0EBYptBAWFBLBQYAAAAAAwADANIAAAApAgAAAAA=", "api"=>{"id"=>96, "options"=>nil, "input"=>"UEsDBBQACAAIANeUgUkAAAAAAAAAAAAAAAAIABAAc2ltcGxlLmNVWAwArNBAWKbQQFj1ARQA09dS8EjNyclXCM8vyklRKCjKTy9KzFXQ0ufiUs7MS84pTUnl4spNzMzT0OSq5lIAgoKizLySNA0lJG1KmtZctVwAUEsHCPRPLq9CAAAASwAAAFBLAwQKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAQAF9fTUFDT1NYL1VYDAC20EBYttBAWPUBFABQSwMEFAAIAAgA15SBSQAAAAAAAAAAAAAAABMAEABfX01BQ09TWC8uX3NpbXBsZS5jVVgMAKzQQFim0EBY9QEUAGNgFWNnYGJg8E1MVvAPVohQgAKQGAMnEBsxMDCaAWkgnzGDgSjgGBISBGGBdTwA4g40JUxQcX4GBvHk/Fy9xIKCnFS9kNSKEte85PyUzLx0iLr3QFzJwGCOUJObWpKYkliSaJXt6+KTmJSaE5+ZXJ5SkV6VkmKUaZqfUVWUlZRhlp5YlJlYCtRcWpKma2FtaGxiZGhuaWHy6cXOzwlRkQ7OBc+vibm/vNxXd+prf1TphSV8QnIn1BliKwzmtW2zCf7xOsG26c53pRUzpTa4CQVmzTZynfN0Az/bpP8q193O2louv1NjnM3Lo7LXIFzz/NcrKSL/nl88ssZ8doTKkmnXlrat2XIpt+DItkju9lNfzwWt1ZhueQ8AUEsHCBrkU4cZAQAAaAEAAFBLAQIVAxQACAAIANeUgUn0Ty6vQgAAAEsAAAAIAAwAAAAAAAAAAECkgQAAAABzaW1wbGUuY1VYCACs0EBYptBAWFBLAQIVAwoAAAAAAOGUgUkAAAAAAAAAAAAAAAAJAAwAAAAAAAAAAED9QYgAAABfX01BQ09TWC9VWAgAttBAWLbQQFhQSwECFQMUAAgACADXlIFJGuRThxkBAABoAQAAEwAMAAAAAAAAAABApIG/AAAAX19NQUNPU1gvLl9zaW1wbGUuY1VYCACs0EBYptBAWFBLBQYAAAAAAwADANIAAAApAgAAAAA="}}
+received request from 155.99.166.24#
+project id is 96
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/96/simple-cSjRsI.bc simple.c
+clang returned non-zero.
+posting to 155.99.166.24:3000/projects/96/receive_service_output
+96
+Completed 200 OK in 255ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:08:29 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>97, "options"=>nil, "input"=>"UEsDBBQACAAIANeUgUkAAAAAAAAAAAAAAAAIABAAc2ltcGxlLmNVWAwArNBAWKbQQFj1ARQA09dS8EjNyclXCM8vyklRKCjKTy9KzFXQ0ufiUs7MS84pTUnl4spNzMzT0OSq5lIAgoKizLySNA0lJG1KmtZctVwAUEsHCPRPLq9CAAAASwAAAFBLAwQKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAQAF9fTUFDT1NYL1VYDAC20EBYttBAWPUBFABQSwMEFAAIAAgA15SBSQAAAAAAAAAAAAAAABMAEABfX01BQ09TWC8uX3NpbXBsZS5jVVgMAKzQQFim0EBY9QEUAGNgFWNnYGJg8E1MVvAPVohQgAKQGAMnEBsxMDCaAWkgnzGDgSjgGBISBGGBdTwA4g40JUxQcX4GBvHk/Fy9xIKCnFS9kNSKEte85PyUzLx0iLr3QFzJwGCOUJObWpKYkliSaJXt6+KTmJSaE5+ZXJ5SkV6VkmKUaZqfUVWUlZRhlp5YlJlYCtRcWpKma2FtaGxiZGhuaWHy6cXOzwlRkQ7OBc+vibm/vNxXd+prf1TphSV8QnIn1BliKwzmtW2zCf7xOsG26c53pRUzpTa4CQVmzTZynfN0Az/bpP8q193O2louv1NjnM3Lo7LXIFzz/NcrKSL/nl88ssZ8doTKkmnXlrat2XIpt+DItkju9lNfzwWt1ZhueQ8AUEsHCBrkU4cZAQAAaAEAAFBLAQIVAxQACAAIANeUgUn0Ty6vQgAAAEsAAAAIAAwAAAAAAAAAAECkgQAAAABzaW1wbGUuY1VYCACs0EBYptBAWFBLAQIVAwoAAAAAAOGUgUkAAAAAAAAAAAAAAAAJAAwAAAAAAAAAAED9QYgAAABfX01BQ09TWC9VWAgAttBAWLbQQFhQSwECFQMUAAgACADXlIFJGuRThxkBAABoAQAAEwAMAAAAAAAAAABApIG/AAAAX19NQUNPU1gvLl9zaW1wbGUuY1VYCACs0EBYptBAWFBLBQYAAAAAAwADANIAAAApAgAAAAA=", "api"=>{"id"=>97, "options"=>nil, "input"=>"UEsDBBQACAAIANeUgUkAAAAAAAAAAAAAAAAIABAAc2ltcGxlLmNVWAwArNBAWKbQQFj1ARQA09dS8EjNyclXCM8vyklRKCjKTy9KzFXQ0ufiUs7MS84pTUnl4spNzMzT0OSq5lIAgoKizLySNA0lJG1KmtZctVwAUEsHCPRPLq9CAAAASwAAAFBLAwQKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAQAF9fTUFDT1NYL1VYDAC20EBYttBAWPUBFABQSwMEFAAIAAgA15SBSQAAAAAAAAAAAAAAABMAEABfX01BQ09TWC8uX3NpbXBsZS5jVVgMAKzQQFim0EBY9QEUAGNgFWNnYGJg8E1MVvAPVohQgAKQGAMnEBsxMDCaAWkgnzGDgSjgGBISBGGBdTwA4g40JUxQcX4GBvHk/Fy9xIKCnFS9kNSKEte85PyUzLx0iLr3QFzJwGCOUJObWpKYkliSaJXt6+KTmJSaE5+ZXJ5SkV6VkmKUaZqfUVWUlZRhlp5YlJlYCtRcWpKma2FtaGxiZGhuaWHy6cXOzwlRkQ7OBc+vibm/vNxXd+prf1TphSV8QnIn1BliKwzmtW2zCf7xOsG26c53pRUzpTa4CQVmzTZynfN0Az/bpP8q193O2louv1NjnM3Lo7LXIFzz/NcrKSL/nl88ssZ8doTKkmnXlrat2XIpt+DItkju9lNfzwWt1ZhueQ8AUEsHCBrkU4cZAQAAaAEAAFBLAQIVAxQACAAIANeUgUn0Ty6vQgAAAEsAAAAIAAwAAAAAAAAAAECkgQAAAABzaW1wbGUuY1VYCACs0EBYptBAWFBLAQIVAwoAAAAAAOGUgUkAAAAAAAAAAAAAAAAJAAwAAAAAAAAAAED9QYgAAABfX01BQ09TWC9VWAgAttBAWLbQQFhQSwECFQMUAAgACADXlIFJGuRThxkBAABoAQAAEwAMAAAAAAAAAABApIG/AAAAX19NQUNPU1gvLl9zaW1wbGUuY1VYCACs0EBYptBAWFBLBQYAAAAAAwADANIAAAApAgAAAAA="}}
+received request from 155.99.166.24#
+project id is 97
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/97/simple-eDU0rR.bc simple.c
+clang returned non-zero.
+posting to 155.99.166.24:3000/projects/97/receive_service_output
+97
+Completed 200 OK in 265ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:10:00 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>98, "options"=>nil, "input"=>"UEsDBBQACAAIANeUgUkAAAAAAAAAAAAAAAAIABAAc2ltcGxlLmNVWAwArNBAWKbQQFj1ARQA09dS8EjNyclXCM8vyklRKCjKTy9KzFXQ0ufiUs7MS84pTUnl4spNzMzT0OSq5lIAgoKizLySNA0lJG1KmtZctVwAUEsHCPRPLq9CAAAASwAAAFBLAwQKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAQAF9fTUFDT1NYL1VYDAC20EBYttBAWPUBFABQSwMEFAAIAAgA15SBSQAAAAAAAAAAAAAAABMAEABfX01BQ09TWC8uX3NpbXBsZS5jVVgMAKzQQFim0EBY9QEUAGNgFWNnYGJg8E1MVvAPVohQgAKQGAMnEBsxMDCaAWkgnzGDgSjgGBISBGGBdTwA4g40JUxQcX4GBvHk/Fy9xIKCnFS9kNSKEte85PyUzLx0iLr3QFzJwGCOUJObWpKYkliSaJXt6+KTmJSaE5+ZXJ5SkV6VkmKUaZqfUVWUlZRhlp5YlJlYCtRcWpKma2FtaGxiZGhuaWHy6cXOzwlRkQ7OBc+vibm/vNxXd+prf1TphSV8QnIn1BliKwzmtW2zCf7xOsG26c53pRUzpTa4CQVmzTZynfN0Az/bpP8q193O2louv1NjnM3Lo7LXIFzz/NcrKSL/nl88ssZ8doTKkmnXlrat2XIpt+DItkju9lNfzwWt1ZhueQ8AUEsHCBrkU4cZAQAAaAEAAFBLAQIVAxQACAAIANeUgUn0Ty6vQgAAAEsAAAAIAAwAAAAAAAAAAECkgQAAAABzaW1wbGUuY1VYCACs0EBYptBAWFBLAQIVAwoAAAAAAOGUgUkAAAAAAAAAAAAAAAAJAAwAAAAAAAAAAED9QYgAAABfX01BQ09TWC9VWAgAttBAWLbQQFhQSwECFQMUAAgACADXlIFJGuRThxkBAABoAQAAEwAMAAAAAAAAAABApIG/AAAAX19NQUNPU1gvLl9zaW1wbGUuY1VYCACs0EBYptBAWFBLBQYAAAAAAwADANIAAAApAgAAAAA=", "api"=>{"id"=>98, "options"=>nil, "input"=>"UEsDBBQACAAIANeUgUkAAAAAAAAAAAAAAAAIABAAc2ltcGxlLmNVWAwArNBAWKbQQFj1ARQA09dS8EjNyclXCM8vyklRKCjKTy9KzFXQ0ufiUs7MS84pTUnl4spNzMzT0OSq5lIAgoKizLySNA0lJG1KmtZctVwAUEsHCPRPLq9CAAAASwAAAFBLAwQKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAQAF9fTUFDT1NYL1VYDAC20EBYttBAWPUBFABQSwMEFAAIAAgA15SBSQAAAAAAAAAAAAAAABMAEABfX01BQ09TWC8uX3NpbXBsZS5jVVgMAKzQQFim0EBY9QEUAGNgFWNnYGJg8E1MVvAPVohQgAKQGAMnEBsxMDCaAWkgnzGDgSjgGBISBGGBdTwA4g40JUxQcX4GBvHk/Fy9xIKCnFS9kNSKEte85PyUzLx0iLr3QFzJwGCOUJObWpKYkliSaJXt6+KTmJSaE5+ZXJ5SkV6VkmKUaZqfUVWUlZRhlp5YlJlYCtRcWpKma2FtaGxiZGhuaWHy6cXOzwlRkQ7OBc+vibm/vNxXd+prf1TphSV8QnIn1BliKwzmtW2zCf7xOsG26c53pRUzpTa4CQVmzTZynfN0Az/bpP8q193O2louv1NjnM3Lo7LXIFzz/NcrKSL/nl88ssZ8doTKkmnXlrat2XIpt+DItkju9lNfzwWt1ZhueQ8AUEsHCBrkU4cZAQAAaAEAAFBLAQIVAxQACAAIANeUgUn0Ty6vQgAAAEsAAAAIAAwAAAAAAAAAAECkgQAAAABzaW1wbGUuY1VYCACs0EBYptBAWFBLAQIVAwoAAAAAAOGUgUkAAAAAAAAAAAAAAAAJAAwAAAAAAAAAAED9QYgAAABfX01BQ09TWC9VWAgAttBAWLbQQFhQSwECFQMUAAgACADXlIFJGuRThxkBAABoAQAAEwAMAAAAAAAAAABApIG/AAAAX19NQUNPU1gvLl9zaW1wbGUuY1VYCACs0EBYptBAWFBLBQYAAAAAAwADANIAAAApAgAAAAA="}}
+received request from 155.99.166.24#
+project id is 98
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/98/simple-8zs6IF.bc simple.c
+clang returned non-zero.
+posting to 155.99.166.24:3000/projects/98/receive_service_output
+98
+Completed 200 OK in 299ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:12:25 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>99, "options"=>nil, "input"=>"", "api"=>{"id"=>99, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 99
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:12:36 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>100, "options"=>nil, "input"=>"", "api"=>{"id"=>100, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 100
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:12:49 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>101, "options"=>nil, "input"=>"", "api"=>{"id"=>101, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 101
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:13:38 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>102, "options"=>nil, "input"=>"", "api"=>{"id"=>102, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 102
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:18:02 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>103, "options"=>nil, "input"=>"", "api"=>{"id"=>103, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 103
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:18:18 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>104, "options"=>nil, "input"=>"", "api"=>{"id"=>104, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 104
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:37:17 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>93, "options"=>nil, "input"=>"", "api"=>{"id"=>93, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 93
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:39:12 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>93, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>93, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.166.24#
+project id is 93
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 93):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:39:46 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>105, "options"=>nil, "input"=>"", "api"=>{"id"=>105, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 105
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:40:45 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>106, "options"=>nil, "input"=>"", "api"=>{"id"=>106, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 106
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:41:21 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>107, "options"=>nil, "input"=>"", "api"=>{"id"=>107, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 107
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:46:18 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>83, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>83, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.166.24#
+project id is 83
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/83/simple-VDLgSs.bc simple.c
+clang returned non-zero.
+posting to 155.99.166.24:3000/projects/83/receive_service_output
+83
+Completed 200 OK in 316ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:49:11 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>108, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>108, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.166.24#
+project id is 108
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/108/simple-CYhjtj.bc simple.c
+clang returned non-zero.
+posting to 155.99.166.24:3000/projects/108/receive_service_output
+108
+Completed 200 OK in 282ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 03:56:11 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>109, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>109, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.166.24#
+project id is 109
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/109/simple-T2zNVb.bc simple.c
+clang returned non-zero.
+posting to 155.99.166.24:3000/projects/109/receive_service_output
+109
+Error while sending service output
+500 Internal Server Error
+Completed 200 OK in 460ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 04:06:07 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>110, "options"=>nil, "input"=>"", "api"=>{"id"=>110, "options"=>nil, "input"=>""}}
+received request from 155.99.166.24#
+project id is 110
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 04:09:27 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>108, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>108, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.166.24#
+project id is 108
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 108):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 155.99.166.24 at 2016-12-02 04:09:35 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>108, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>108, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.166.24#
+project id is 108
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 108):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 73.98.163.255 at 2016-12-02 06:08:20 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>1, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>1, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 73.98.163.255#
+project id is 1
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/1/simple-rEc8Jj.bc simple.c
+clang returned non-zero.
+posting to 73.98.163.255:3000/projects/1/receive_service_output
+1
+Error while sending service output
+Failed to open TCP connection to 73.98.163.255:3000 (Connection refused - connect(2) for "73.98.163.255" port 3000)
+Completed 200 OK in 5206ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 73.98.163.255 at 2016-12-02 06:17:06 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>2, "options"=>nil, "input"=>"", "api"=>{"id"=>2, "options"=>nil, "input"=>""}}
+received request from 73.98.163.255#
+project id is 2
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 73.98.163.255 at 2016-12-02 06:17:35 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>3, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>3, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 73.98.163.255#
+project id is 3
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/3/simple-36P6Hi.bc simple.c
+clang returned non-zero.
+posting to 73.98.163.255:3000/projects/3/receive_service_output
+3
+Error while sending service output
+Failed to open TCP connection to 73.98.163.255:3000 (Connection refused - connect(2) for "73.98.163.255" port 3000)
+Completed 200 OK in 5447ms (Views: 0.1ms)
+
+
+Started GET "/job_started" for 73.98.163.255 at 2016-12-02 06:18:55 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/job_started"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/favicon.ico" for 73.98.163.255 at 2016-12-02 06:18:56 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/" for 73.98.163.255 at 2016-12-02 06:19:10 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/ubuntu/.gem/ruby/2.3.1/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ubuntu/.gem/ruby/2.3.1/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 6ms (Views: 5.5ms)
+
+
+Started POST "/job_started" for 73.98.163.255 at 2016-12-02 06:32:02 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>4, "options"=>nil, "input"=>"", "api"=>{"id"=>4, "options"=>nil, "input"=>""}}
+received request from 73.98.163.255#
+project id is 4
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 73.98.163.255 at 2016-12-02 06:32:35 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAAPUzgkn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA9jOCSehdsvthAQAAYQEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAADwAAF2NvbS5hcHBsZS5UZXh0RW5jb2RpbmcAAAAAAADvgIAAeQAAN2NvbS5hcHBsZS5tZXRhZGF0YTprTURMYWJlbF9pY3dkeGd6ZGQyaTVvaHpyamJoNmdhcmlhdQAAAHV0Zi04OzEzNDIxNzk4NPKoubNgWllAQ3DnlpZH6ZOOfsq1B1p10KQOEh7IpwBdeDAGBgY8U++/vdy3IgABGgBGElFqAzJFBOWwjwYC77+9OQfcvDNrDQwkBTBXKc+11KQUBueRhAQ3A1gkBAbWpQYEBNKtcMS2WQsHyrXOkgUoBznvv71QSwECFAAKAAAAAAD1M4JJ9E8ur0sAAABLAAAACAAAAAAAAAAAAAAAAAAAAAAAc2ltcGxlLmNQSwECFAAKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAAAAAAAAAAABAAAABxAAAAX19NQUNPU1gvUEsBAhQACgAAAAAA9jOCSehdsvthAQAAYQEAABMAAAAAAAAAAAAAAAAAmAAAAF9fTUFDT1NYLy5fc2ltcGxlLmNQSwUGAAAAAAMAAwCuAAAAKgIAAAAA", "api"=>{"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAAPUzgkn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA9jOCSehdsvthAQAAYQEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAADwAAF2NvbS5hcHBsZS5UZXh0RW5jb2RpbmcAAAAAAADvgIAAeQAAN2NvbS5hcHBsZS5tZXRhZGF0YTprTURMYWJlbF9pY3dkeGd6ZGQyaTVvaHpyamJoNmdhcmlhdQAAAHV0Zi04OzEzNDIxNzk4NPKoubNgWllAQ3DnlpZH6ZOOfsq1B1p10KQOEh7IpwBdeDAGBgY8U++/vdy3IgABGgBGElFqAzJFBOWwjwYC77+9OQfcvDNrDQwkBTBXKc+11KQUBueRhAQ3A1gkBAbWpQYEBNKtcMS2WQsHyrXOkgUoBznvv71QSwECFAAKAAAAAAD1M4JJ9E8ur0sAAABLAAAACAAAAAAAAAAAAAAAAAAAAAAAc2ltcGxlLmNQSwECFAAKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAAAAAAAAAAABAAAABxAAAAX19NQUNPU1gvUEsBAhQACgAAAAAA9jOCSehdsvthAQAAYQEAABMAAAAAAAAAAAAAAAAAmAAAAF9fTUFDT1NYLy5fc2ltcGxlLmNQSwUGAAAAAAMAAwCuAAAAKgIAAAAA"}}
+received request from 73.98.163.255#
+project id is 5
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/5/simple-cDpXRg.bc simple.c
+clang returned non-zero.
+posting to 73.98.163.255:3000/projects/5/receive_service_output
+5
+Error while sending service output
+Failed to open TCP connection to 73.98.163.255:3000 (Connection refused - connect(2) for "73.98.163.255" port 3000)
+Completed 200 OK in 6053ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 73.98.163.255 at 2016-12-02 06:36:28 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAAPUzgkn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA9jOCSehdsvthAQAAYQEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAADwAAF2NvbS5hcHBsZS5UZXh0RW5jb2RpbmcAAAAAAADvgIAAeQAAN2NvbS5hcHBsZS5tZXRhZGF0YTprTURMYWJlbF9pY3dkeGd6ZGQyaTVvaHpyamJoNmdhcmlhdQAAAHV0Zi04OzEzNDIxNzk4NPKoubNgWllAQ3DnlpZH6ZOOfsq1B1p10KQOEh7IpwBdeDAGBgY8U++/vdy3IgABGgBGElFqAzJFBOWwjwYC77+9OQfcvDNrDQwkBTBXKc+11KQUBueRhAQ3A1gkBAbWpQYEBNKtcMS2WQsHyrXOkgUoBznvv71QSwECFAAKAAAAAAD1M4JJ9E8ur0sAAABLAAAACAAAAAAAAAAAAAAAAAAAAAAAc2ltcGxlLmNQSwECFAAKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAAAAAAAAAAABAAAABxAAAAX19NQUNPU1gvUEsBAhQACgAAAAAA9jOCSehdsvthAQAAYQEAABMAAAAAAAAAAAAAAAAAmAAAAF9fTUFDT1NYLy5fc2ltcGxlLmNQSwUGAAAAAAMAAwCuAAAAKgIAAAAA", "api"=>{"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAAPUzgkn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA9jOCSehdsvthAQAAYQEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAADwAAF2NvbS5hcHBsZS5UZXh0RW5jb2RpbmcAAAAAAADvgIAAeQAAN2NvbS5hcHBsZS5tZXRhZGF0YTprTURMYWJlbF9pY3dkeGd6ZGQyaTVvaHpyamJoNmdhcmlhdQAAAHV0Zi04OzEzNDIxNzk4NPKoubNgWllAQ3DnlpZH6ZOOfsq1B1p10KQOEh7IpwBdeDAGBgY8U++/vdy3IgABGgBGElFqAzJFBOWwjwYC77+9OQfcvDNrDQwkBTBXKc+11KQUBueRhAQ3A1gkBAbWpQYEBNKtcMS2WQsHyrXOkgUoBznvv71QSwECFAAKAAAAAAD1M4JJ9E8ur0sAAABLAAAACAAAAAAAAAAAAAAAAAAAAAAAc2ltcGxlLmNQSwECFAAKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAAAAAAAAAAABAAAABxAAAAX19NQUNPU1gvUEsBAhQACgAAAAAA9jOCSehdsvthAQAAYQEAABMAAAAAAAAAAAAAAAAAmAAAAF9fTUFDT1NYLy5fc2ltcGxlLmNQSwUGAAAAAAMAAwCuAAAAKgIAAAAA"}}
+received request from 73.98.163.255#
+project id is 5
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 5):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 73.98.163.255 at 2016-12-02 06:36:35 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAAPUzgkn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA9jOCSehdsvthAQAAYQEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAADwAAF2NvbS5hcHBsZS5UZXh0RW5jb2RpbmcAAAAAAADvgIAAeQAAN2NvbS5hcHBsZS5tZXRhZGF0YTprTURMYWJlbF9pY3dkeGd6ZGQyaTVvaHpyamJoNmdhcmlhdQAAAHV0Zi04OzEzNDIxNzk4NPKoubNgWllAQ3DnlpZH6ZOOfsq1B1p10KQOEh7IpwBdeDAGBgY8U++/vdy3IgABGgBGElFqAzJFBOWwjwYC77+9OQfcvDNrDQwkBTBXKc+11KQUBueRhAQ3A1gkBAbWpQYEBNKtcMS2WQsHyrXOkgUoBznvv71QSwECFAAKAAAAAAD1M4JJ9E8ur0sAAABLAAAACAAAAAAAAAAAAAAAAAAAAAAAc2ltcGxlLmNQSwECFAAKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAAAAAAAAAAABAAAABxAAAAX19NQUNPU1gvUEsBAhQACgAAAAAA9jOCSehdsvthAQAAYQEAABMAAAAAAAAAAAAAAAAAmAAAAF9fTUFDT1NYLy5fc2ltcGxlLmNQSwUGAAAAAAMAAwCuAAAAKgIAAAAA", "api"=>{"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAAPUzgkn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA9jOCSehdsvthAQAAYQEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAADwAAF2NvbS5hcHBsZS5UZXh0RW5jb2RpbmcAAAAAAADvgIAAeQAAN2NvbS5hcHBsZS5tZXRhZGF0YTprTURMYWJlbF9pY3dkeGd6ZGQyaTVvaHpyamJoNmdhcmlhdQAAAHV0Zi04OzEzNDIxNzk4NPKoubNgWllAQ3DnlpZH6ZOOfsq1B1p10KQOEh7IpwBdeDAGBgY8U++/vdy3IgABGgBGElFqAzJFBOWwjwYC77+9OQfcvDNrDQwkBTBXKc+11KQUBueRhAQ3A1gkBAbWpQYEBNKtcMS2WQsHyrXOkgUoBznvv71QSwECFAAKAAAAAAD1M4JJ9E8ur0sAAABLAAAACAAAAAAAAAAAAAAAAAAAAAAAc2ltcGxlLmNQSwECFAAKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAAAAAAAAAAABAAAABxAAAAX19NQUNPU1gvUEsBAhQACgAAAAAA9jOCSehdsvthAQAAYQEAABMAAAAAAAAAAAAAAAAAmAAAAF9fTUFDT1NYLy5fc2ltcGxlLmNQSwUGAAAAAAMAAwCuAAAAKgIAAAAA"}}
+received request from 73.98.163.255#
+project id is 5
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 5):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 73.98.163.255 at 2016-12-02 06:36:45 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAAPUzgkn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA9jOCSehdsvthAQAAYQEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAADwAAF2NvbS5hcHBsZS5UZXh0RW5jb2RpbmcAAAAAAADvgIAAeQAAN2NvbS5hcHBsZS5tZXRhZGF0YTprTURMYWJlbF9pY3dkeGd6ZGQyaTVvaHpyamJoNmdhcmlhdQAAAHV0Zi04OzEzNDIxNzk4NPKoubNgWllAQ3DnlpZH6ZOOfsq1B1p10KQOEh7IpwBdeDAGBgY8U++/vdy3IgABGgBGElFqAzJFBOWwjwYC77+9OQfcvDNrDQwkBTBXKc+11KQUBueRhAQ3A1gkBAbWpQYEBNKtcMS2WQsHyrXOkgUoBznvv71QSwECFAAKAAAAAAD1M4JJ9E8ur0sAAABLAAAACAAAAAAAAAAAAAAAAAAAAAAAc2ltcGxlLmNQSwECFAAKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAAAAAAAAAAABAAAABxAAAAX19NQUNPU1gvUEsBAhQACgAAAAAA9jOCSehdsvthAQAAYQEAABMAAAAAAAAAAAAAAAAAmAAAAF9fTUFDT1NYLy5fc2ltcGxlLmNQSwUGAAAAAAMAAwCuAAAAKgIAAAAA", "api"=>{"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAAPUzgkn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA9jOCSehdsvthAQAAYQEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAADwAAF2NvbS5hcHBsZS5UZXh0RW5jb2RpbmcAAAAAAADvgIAAeQAAN2NvbS5hcHBsZS5tZXRhZGF0YTprTURMYWJlbF9pY3dkeGd6ZGQyaTVvaHpyamJoNmdhcmlhdQAAAHV0Zi04OzEzNDIxNzk4NPKoubNgWllAQ3DnlpZH6ZOOfsq1B1p10KQOEh7IpwBdeDAGBgY8U++/vdy3IgABGgBGElFqAzJFBOWwjwYC77+9OQfcvDNrDQwkBTBXKc+11KQUBueRhAQ3A1gkBAbWpQYEBNKtcMS2WQsHyrXOkgUoBznvv71QSwECFAAKAAAAAAD1M4JJ9E8ur0sAAABLAAAACAAAAAAAAAAAAAAAAAAAAAAAc2ltcGxlLmNQSwECFAAKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAAAAAAAAAAABAAAABxAAAAX19NQUNPU1gvUEsBAhQACgAAAAAA9jOCSehdsvthAQAAYQEAABMAAAAAAAAAAAAAAAAAmAAAAF9fTUFDT1NYLy5fc2ltcGxlLmNQSwUGAAAAAAMAAwCuAAAAKgIAAAAA"}}
+received request from 73.98.163.255#
+project id is 5
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 5):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:02:03 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>6, "options"=>nil, "input"=>"UEsDBAoAAAAAADeAgkn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAAN4CCSehdsvthAQAAYQEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAADwAAF2NvbS5hcHBsZS5UZXh0RW5jb2RpbmcAAAAAAADvgIAAeQAAN2NvbS5hcHBsZS5tZXRhZGF0YTprTURMYWJlbF9pY3dkeGd6ZGQyaTVvaHpyamJoNmdhcmlhdQAAAHV0Zi04OzEzNDIxNzk4NPKoubNgWllAQ3DnlpZH6ZOOfsq1B1p10KQOEh7IpwBdeDAGBgY8U++/vdy3IgABGgBGElFqAzJFBOWwjwYC77+9OQfcvDNrDQwkBTBXKc+11KQUBueRhAQ3A1gkBAbWpQYEBNKtcMS2WQsHyrXOkgUoBznvv71QSwECFAAKAAAAAAA3gIJJ9E8ur0sAAABLAAAACAAAAAAAAAAAAAAAAAAAAAAAc2ltcGxlLmNQSwECFAAKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAAAAAAAAAAABAAAABxAAAAX19NQUNPU1gvUEsBAhQACgAAAAAAN4CCSehdsvthAQAAYQEAABMAAAAAAAAAAAAAAAAAmAAAAF9fTUFDT1NYLy5fc2ltcGxlLmNQSwUGAAAAAAMAAwCuAAAAKgIAAAAA", "api"=>{"id"=>6, "options"=>nil, "input"=>"UEsDBAoAAAAAADeAgkn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAAN4CCSehdsvthAQAAYQEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAADwAAF2NvbS5hcHBsZS5UZXh0RW5jb2RpbmcAAAAAAADvgIAAeQAAN2NvbS5hcHBsZS5tZXRhZGF0YTprTURMYWJlbF9pY3dkeGd6ZGQyaTVvaHpyamJoNmdhcmlhdQAAAHV0Zi04OzEzNDIxNzk4NPKoubNgWllAQ3DnlpZH6ZOOfsq1B1p10KQOEh7IpwBdeDAGBgY8U++/vdy3IgABGgBGElFqAzJFBOWwjwYC77+9OQfcvDNrDQwkBTBXKc+11KQUBueRhAQ3A1gkBAbWpQYEBNKtcMS2WQsHyrXOkgUoBznvv71QSwECFAAKAAAAAAA3gIJJ9E8ur0sAAABLAAAACAAAAAAAAAAAAAAAAAAAAAAAc2ltcGxlLmNQSwECFAAKAAAAAADhlIFJAAAAAAAAAAAAAAAACQAAAAAAAAAAABAAAABxAAAAX19NQUNPU1gvUEsBAhQACgAAAAAAN4CCSehdsvthAQAAYQEAABMAAAAAAAAAAAAAAAAAmAAAAF9fTUFDT1NYLy5fc2ltcGxlLmNQSwUGAAAAAAMAAwCuAAAAKgIAAAAA"}}
+received request from 155.99.92.90#
+project id is 6
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/6/simple-D2QJgD.bc simple.c
+clang returned non-zero.
+posting to 155.99.92.90:3000/projects/6/receive_service_output
+6
+Completed 200 OK in 254ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:05:00 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>7, "options"=>nil, "input"=>"", "api"=>{"id"=>7, "options"=>nil, "input"=>""}}
+received request from 155.99.92.90#
+project id is 7
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:05:19 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>8, "options"=>nil, "input"=>"", "api"=>{"id"=>8, "options"=>nil, "input"=>""}}
+received request from 155.99.92.90#
+project id is 8
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:06:42 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>9, "options"=>nil, "input"=>"", "api"=>{"id"=>9, "options"=>nil, "input"=>""}}
+received request from 155.99.92.90#
+project id is 9
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:07:38 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>10, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>10, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.92.90#
+project id is 10
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/10/simple-H2r1V3.bc simple.c
+clang returned non-zero.
+posting to 155.99.92.90:3000/projects/10/receive_service_output
+10
+Completed 200 OK in 275ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:08:11 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>11, "options"=>nil, "input"=>"", "api"=>{"id"=>11, "options"=>nil, "input"=>""}}
+received request from 155.99.92.90#
+project id is 11
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:10:03 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>12, "options"=>nil, "input"=>"", "api"=>{"id"=>12, "options"=>nil, "input"=>""}}
+received request from 155.99.92.90#
+project id is 12
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:15:06 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>13, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>13, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.92.90#
+project id is 13
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/13/simple-voR6Ay.bc simple.c
+clang returned non-zero.
+posting to 155.99.92.90:3000/projects/13/receive_service_output
+13
+Completed 200 OK in 281ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:20:36 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>14, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>14, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.92.90#
+project id is 14
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/14/simple-EkuhVQ.bc simple.c
+clang returned non-zero.
+posting to 155.99.92.90:3000/projects/14/receive_service_output
+14
+Completed 200 OK in 259ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:22:19 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>15, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>15, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.92.90#
+project id is 15
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/15/simple-3TgoRC.bc simple.c
+clang returned non-zero.
+posting to 155.99.92.90:3000/projects/15/receive_service_output
+15
+Completed 200 OK in 281ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:23:57 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>16, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>16, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.92.90#
+project id is 16
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/16/simple-dp9Rxm.bc simple.c
+clang returned non-zero.
+posting to 155.99.92.90:3000/projects/16/receive_service_output
+16
+Completed 200 OK in 251ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:25:27 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>17, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>17, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.92.90#
+project id is 17
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/17/simple-z1z3p8.bc simple.c
+clang returned non-zero.
+posting to 155.99.92.90:3000/projects/17/receive_service_output
+17
+Completed 200 OK in 244ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 128.110.90.110 at 2016-12-02 16:34:08 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>11, "options"=>nil, "input"=>"UEsDBAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAZGVmYXVsdC9QSwMECgAAAAAA8IN3SUINDm8kAAAAJAAAABQAAABkZWZhdWx0L2MrKyBmaWxlLmNwcGludCBtYWluKGludCBhcmdjLCBjaGFyKiBhcmd2W10pIHsKfVBLAwQKAAAAAACPbH5JAJ/ntx8AAAAfAAAAFwAAAGRlZmF1bHQvaGVhZGVyIGZpbGUuaHBwLy8gVGhpcyBzaG91bGQgYmUgYSBoZWFkZXIgZmlsZVBLAQIUAAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAABkZWZhdWx0L1BLAQIUAAoAAAAAAPCDd0lCDQ5vJAAAACQAAAAUAAAAAAAAAAAAAAAAACYAAABkZWZhdWx0L2MrKyBmaWxlLmNwcFBLAQIUAAoAAAAAAI9sfkkAn+e3HwAAAB8AAAAXAAAAAAAAAAAAAAAAAHwAAABkZWZhdWx0L2hlYWRlciBmaWxlLmhwcFBLBQYAAAAAAwADAL0AAADQAAAAAAA=", "api"=>{"id"=>11, "options"=>nil, "input"=>"UEsDBAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAZGVmYXVsdC9QSwMECgAAAAAA8IN3SUINDm8kAAAAJAAAABQAAABkZWZhdWx0L2MrKyBmaWxlLmNwcGludCBtYWluKGludCBhcmdjLCBjaGFyKiBhcmd2W10pIHsKfVBLAwQKAAAAAACPbH5JAJ/ntx8AAAAfAAAAFwAAAGRlZmF1bHQvaGVhZGVyIGZpbGUuaHBwLy8gVGhpcyBzaG91bGQgYmUgYSBoZWFkZXIgZmlsZVBLAQIUAAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAABkZWZhdWx0L1BLAQIUAAoAAAAAAPCDd0lCDQ5vJAAAACQAAAAUAAAAAAAAAAAAAAAAACYAAABkZWZhdWx0L2MrKyBmaWxlLmNwcFBLAQIUAAoAAAAAAI9sfkkAn+e3HwAAAB8AAAAXAAAAAAAAAAAAAAAAAHwAAABkZWZhdWx0L2hlYWRlciBmaWxlLmhwcFBLBQYAAAAAAwADAL0AAADQAAAAAAA="}}
+received request from 128.110.90.110#
+project id is 11
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 11):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 128.110.90.110 at 2016-12-02 16:40:26 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>12, "options"=>nil, "input"=>"UEsDBAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAZGVmYXVsdC9QSwMECgAAAAAA8IN3SUINDm8kAAAAJAAAABQAAABkZWZhdWx0L2MrKyBmaWxlLmNwcGludCBtYWluKGludCBhcmdjLCBjaGFyKiBhcmd2W10pIHsKfVBLAwQKAAAAAACPbH5JAJ/ntx8AAAAfAAAAFwAAAGRlZmF1bHQvaGVhZGVyIGZpbGUuaHBwLy8gVGhpcyBzaG91bGQgYmUgYSBoZWFkZXIgZmlsZVBLAQIUAAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAABkZWZhdWx0L1BLAQIUAAoAAAAAAPCDd0lCDQ5vJAAAACQAAAAUAAAAAAAAAAAAAAAAACYAAABkZWZhdWx0L2MrKyBmaWxlLmNwcFBLAQIUAAoAAAAAAI9sfkkAn+e3HwAAAB8AAAAXAAAAAAAAAAAAAAAAAHwAAABkZWZhdWx0L2hlYWRlciBmaWxlLmhwcFBLBQYAAAAAAwADAL0AAADQAAAAAAA=", "api"=>{"id"=>12, "options"=>nil, "input"=>"UEsDBAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAZGVmYXVsdC9QSwMECgAAAAAA8IN3SUINDm8kAAAAJAAAABQAAABkZWZhdWx0L2MrKyBmaWxlLmNwcGludCBtYWluKGludCBhcmdjLCBjaGFyKiBhcmd2W10pIHsKfVBLAwQKAAAAAACPbH5JAJ/ntx8AAAAfAAAAFwAAAGRlZmF1bHQvaGVhZGVyIGZpbGUuaHBwLy8gVGhpcyBzaG91bGQgYmUgYSBoZWFkZXIgZmlsZVBLAQIUAAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAABkZWZhdWx0L1BLAQIUAAoAAAAAAPCDd0lCDQ5vJAAAACQAAAAUAAAAAAAAAAAAAAAAACYAAABkZWZhdWx0L2MrKyBmaWxlLmNwcFBLAQIUAAoAAAAAAI9sfkkAn+e3HwAAAB8AAAAXAAAAAAAAAAAAAAAAAHwAAABkZWZhdWx0L2hlYWRlciBmaWxlLmhwcFBLBQYAAAAAAwADAL0AAADQAAAAAAA="}}
+received request from 128.110.90.110#
+project id is 12
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 12):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 128.110.90.110 at 2016-12-02 16:46:18 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>13, "options"=>nil, "input"=>"UEsDBAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAZGVmYXVsdC9QSwMECgAAAAAA8IN3SUINDm8kAAAAJAAAABQAAABkZWZhdWx0L2MrKyBmaWxlLmNwcGludCBtYWluKGludCBhcmdjLCBjaGFyKiBhcmd2W10pIHsKfVBLAwQKAAAAAACPbH5JAJ/ntx8AAAAfAAAAFwAAAGRlZmF1bHQvaGVhZGVyIGZpbGUuaHBwLy8gVGhpcyBzaG91bGQgYmUgYSBoZWFkZXIgZmlsZVBLAQIUAAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAABkZWZhdWx0L1BLAQIUAAoAAAAAAPCDd0lCDQ5vJAAAACQAAAAUAAAAAAAAAAAAAAAAACYAAABkZWZhdWx0L2MrKyBmaWxlLmNwcFBLAQIUAAoAAAAAAI9sfkkAn+e3HwAAAB8AAAAXAAAAAAAAAAAAAAAAAHwAAABkZWZhdWx0L2hlYWRlciBmaWxlLmhwcFBLBQYAAAAAAwADAL0AAADQAAAAAAA=", "api"=>{"id"=>13, "options"=>nil, "input"=>"UEsDBAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAZGVmYXVsdC9QSwMECgAAAAAA8IN3SUINDm8kAAAAJAAAABQAAABkZWZhdWx0L2MrKyBmaWxlLmNwcGludCBtYWluKGludCBhcmdjLCBjaGFyKiBhcmd2W10pIHsKfVBLAwQKAAAAAACPbH5JAJ/ntx8AAAAfAAAAFwAAAGRlZmF1bHQvaGVhZGVyIGZpbGUuaHBwLy8gVGhpcyBzaG91bGQgYmUgYSBoZWFkZXIgZmlsZVBLAQIUAAoAAAAAAIdsfkkAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAABkZWZhdWx0L1BLAQIUAAoAAAAAAPCDd0lCDQ5vJAAAACQAAAAUAAAAAAAAAAAAAAAAACYAAABkZWZhdWx0L2MrKyBmaWxlLmNwcFBLAQIUAAoAAAAAAI9sfkkAn+e3HwAAAB8AAAAXAAAAAAAAAAAAAAAAAHwAAABkZWZhdWx0L2hlYWRlciBmaWxlLmhwcFBLBQYAAAAAAwADAL0AAADQAAAAAAA="}}
+received request from 128.110.90.110#
+project id is 13
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 13):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:46:26 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>18, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>18, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.92.90#
+project id is 18
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/18/simple-Sz4451.bc simple.c
+clang returned non-zero.
+posting to 155.99.92.90:3000/projects/18/receive_service_output
+18
+Completed 200 OK in 266ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 16:47:10 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>19, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>19, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.92.90#
+project id is 19
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/19/simple-I66BhE.bc simple.c
+clang returned non-zero.
+posting to 155.99.92.90:3000/projects/19/receive_service_output
+19
+Completed 200 OK in 252ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 172.31.7.23 at 2016-12-02 16:49:29 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>44, "options"=>nil, "input"=>"", "api"=>{"id"=>44, "options"=>nil, "input"=>""}}
+received request from 172.31.7.23#
+project id is 44
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 172.31.7.23 at 2016-12-02 16:49:38 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>45, "options"=>nil, "input"=>"", "api"=>{"id"=>45, "options"=>nil, "input"=>""}}
+received request from 172.31.7.23#
+project id is 45
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 172.31.7.23 at 2016-12-02 16:55:32 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>46, "options"=>nil, "input"=>"", "api"=>{"id"=>46, "options"=>nil, "input"=>""}}
+received request from 172.31.7.23#
+project id is 46
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 172.31.7.23 at 2016-12-02 16:57:24 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>47, "options"=>nil, "input"=>"", "api"=>{"id"=>47, "options"=>nil, "input"=>""}}
+received request from 172.31.7.23#
+project id is 47
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 172.31.7.23 at 2016-12-02 16:58:02 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>48, "options"=>nil, "input"=>"", "api"=>{"id"=>48, "options"=>nil, "input"=>""}}
+received request from 172.31.7.23#
+project id is 48
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 172.31.7.23 at 2016-12-02 17:01:36 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>49, "options"=>nil, "input"=>"", "api"=>{"id"=>49, "options"=>nil, "input"=>""}}
+received request from 172.31.7.23#
+project id is 49
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Zip::Error (File content has zero size. Did you mean to pass the create flag?):
+  
+app/controllers/api_controller.rb:29:in `receive_project_input'
+Started POST "/job_started" for 155.99.92.90 at 2016-12-02 17:05:04 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>1, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>1, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.92.90#
+project id is 1
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 1):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+=> Booting Puma
+=> Rails 5.0.0.1 application starting in development on http://ec2-52-53-187-90.us-west-1.compute.amazonaws.com:3000
+=> Run `rails server -h` for more startup options
+A server is already running. Check /home/ubuntu/src/smack_server/tmp/pids/server.pid.
+Exiting
+=> Booting Puma
+=> Rails 5.0.0.1 application starting in development on http://ec2-52-53-187-90.us-west-1.compute.amazonaws.com:3000
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.6.2 (ruby 2.3.1-p112), codename: Sleepy Sunday Serenity
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://ec2-52-53-187-90.us-west-1.compute.amazonaws.com:3000
+Use Ctrl-C to stop
+Started POST "/job_started" for 172.31.7.23 at 2016-12-02 17:35:59 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>54, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>54, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 172.31.7.23#
+project id is 54
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/54/simple-j2wuV2.bc simple.c
+clang returned non-zero.
+posting to 172.31.7.23:3000/projects/54/receive_service_output
+54
+Completed 200 OK in 155ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 172.31.7.23 at 2016-12-02 20:17:57 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>55, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>55, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 172.31.7.23#
+project id is 55
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/55/simple-hbvbiw.bc simple.c
+clang returned non-zero.
+posting to 172.31.7.23:3000/projects/55/receive_service_output
+55
+Completed 200 OK in 150ms (Views: 0.2ms)
+
+
+Started GET "/" for 63.248.92.115 at 2016-12-04 08:20:39 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/ubuntu/.gem/ruby/2.3.1/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ubuntu/.gem/ruby/2.3.1/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 6ms (Views: 5.6ms)
+
+
+Started GET "/favicon.ico" for 63.248.92.115 at 2016-12-04 08:20:41 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/favicon.ico" for 63.248.92.115 at 2016-12-04 08:20:46 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:17:45 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>3, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>3, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 3
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/3/simple-vOE143.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/3/receive_service_output
+3
+Completed 200 OK in 290ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:32:22 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>4, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>4, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 4
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/4/simple-S7o97l.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/4/receive_service_output
+4
+Completed 200 OK in 263ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:32:56 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 5
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/5/simple-M8gEct.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/5/receive_service_output
+5
+Completed 200 OK in 251ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:35:05 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>5, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 5
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 5):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:35:22 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>6, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>6, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 6
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/6/simple-FJLpqY.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/6/receive_service_output
+6
+Completed 200 OK in 255ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:35:46 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>7, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>7, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 7
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/7/simple-L_Qcj_.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/7/receive_service_output
+7
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:35:46 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>8, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>8, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 8
+Completed 200 OK in 302ms (Views: 0.2ms)
+
+
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/8/simple-kkmPOo.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/8/receive_service_output
+8
+Completed 200 OK in 340ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:38:53 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>9, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>9, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 9
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/9/simple-FEbuls.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/9/receive_service_output
+9
+Completed 200 OK in 276ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:40:35 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>10, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>10, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 10
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/10/simple-HbvBbB.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/10/receive_service_output
+10
+Completed 200 OK in 249ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:43:06 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>11, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>11, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 11
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/11/simple-1AcE80.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/11/receive_service_output
+11
+Completed 200 OK in 276ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 172.31.8.184 at 2016-12-05 23:43:16 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>2, "options"=>nil, "input"=>"UEsFBgAAAAAAAAAAAAAAAAAAAAAAAA==", "api"=>{"id"=>2, "options"=>nil, "input"=>"UEsFBgAAAAAAAAAAAAAAAAAAAAAAAA=="}}
+received request from 172.31.8.184#
+project id is 2
+usage: smack [-h] [--version] [-q | -v | -d] [-t] [-w FILE] [-x LANG]
+             [-bc FILE] [-ll FILE] [--clang-options OPTIONS] [-bpl FILE]
+             [--no-memory-splitting]
+             [--mem-mod {no-reuse,no-reuse-impls,reuse}] [--static-unroll]
+             [--pthread] [--bit-precise] [--bit-precise-pointers]
+             [--no-byte-access-inference] [--entry-points PROC [PROC ...]]
+             [--memory-safety] [--verifier {boogie,corral,duality,svcomp}]
+             [--unroll N] [--loop-limit N] [--context-bound K]
+             [--verifier-options OPTIONS] [--time-limit N]
+             [--max-violations N] [--smackd] [--svcomp-property FILE]
+             input-files [input-files ...]
+smack: error: too few arguments
+posting to 172.31.8.184:3000/projects/2/receive_service_output
+2
+Error while sending service output
+500 Internal Server Error
+Completed 200 OK in 124ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:44:41 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>12, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>12, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 12
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/12/simple-ta1pXd.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/12/receive_service_output
+12
+Completed 200 OK in 248ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:45:21 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>13, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>13, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 13
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/13/simple-8gUK3L.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/13/receive_service_output
+13
+Completed 200 OK in 254ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:45:46 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>14, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>14, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 14
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/14/simple-grkYMI.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/14/receive_service_output
+14
+Completed 200 OK in 247ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:47:52 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>15, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>15, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 15
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/15/simple-sUClgb.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/15/receive_service_output
+15
+Completed 200 OK in 255ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:49:02 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>16, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>16, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 16
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/16/simple-qTuKWD.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/16/receive_service_output
+16
+Completed 200 OK in 251ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:49:40 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>17, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>17, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 17
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/17/simple-gMXlH4.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/17/receive_service_output
+17
+Completed 200 OK in 251ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 155.99.10.156 at 2016-12-05 23:55:35 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>18, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>18, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 18
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/18/simple-F9mNtd.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/18/receive_service_output
+18
+Completed 200 OK in 263ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 172.31.8.184 at 2016-12-05 23:58:20 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>3, "options"=>nil, "input"=>"UEsFBgAAAAAAAAAAAAAAAAAAAAAAAA==", "api"=>{"id"=>3, "options"=>nil, "input"=>"UEsFBgAAAAAAAAAAAAAAAAAAAAAAAA=="}}
+received request from 172.31.8.184#
+project id is 3
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 3):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 172.31.8.184 at 2016-12-05 23:59:00 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>4, "options"=>nil, "input"=>"UEsFBgAAAAAAAAAAAAAAAAAAAAAAAA==", "api"=>{"id"=>4, "options"=>nil, "input"=>"UEsFBgAAAAAAAAAAAAAAAAAAAAAAAA=="}}
+received request from 172.31.8.184#
+project id is 4
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 4):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 155.99.10.156 at 2016-12-06 00:00:52 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>19, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>19, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 19
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/19/simple-unmmQv.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/19/receive_service_output
+19
+Completed 200 OK in 273ms (Views: 0.1ms)
+
+
+Started POST "/job_started" for 172.31.8.184 at 2016-12-06 00:01:39 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>5, "options"=>nil, "input"=>"UEsFBgAAAAAAAAAAAAAAAAAAAAAAAA==", "api"=>{"id"=>5, "options"=>nil, "input"=>"UEsFBgAAAAAAAAAAAAAAAAAAAAAAAA=="}}
+received request from 172.31.8.184#
+project id is 5
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 5):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 155.99.10.156 at 2016-12-06 00:02:40 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>20, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>20, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 20
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/20/simple-uUyNS8.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/20/receive_service_output
+20
+Completed 200 OK in 303ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 172.31.8.184 at 2016-12-06 00:03:02 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>6, "options"=>nil, "input"=>"UEsDBAoAAAAAAHuFhUkAAAAAAAAAAAAAAAAFAAAAdGVzdC9QSwMECgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAB0ZXN0L3Rlc3QuY2luY2x1ZGUgPHN0ZGlvLmg+CgppbnQgbWFpbih2b2lkKSB7CiAgICBpbnQgbnVtOwogICAgcHJpbnRmKCJIZWxsbyB3b3JsZCEgR2l2ZSBtZSBhbiBpbnRlZ2VyOlxuIik7CiAgICBzY2FuZigiJWQiLCAmbnVtKTsKICAgIHByaW50ZigiVGhhbmtzISBJJ3ZlIGFsd2F5cyBiZWVuIGZvbmQgb2YgJWQuXG4iLCBudW0pOwogICAgcmV0dXJuIDA7Cn0KUEsBAhQACgAAAAAAe4WFSQAAAAAAAAAAAAAAAAUAAAAAAAAAAAAQAAAAAAAAAHRlc3QvUEsBAhQACgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAAAAAAAAAAAAAAAIwAAAHRlc3QvdGVzdC5jUEsFBgAAAAACAAIAbAAAABEBAAAAAA==", "api"=>{"id"=>6, "options"=>nil, "input"=>"UEsDBAoAAAAAAHuFhUkAAAAAAAAAAAAAAAAFAAAAdGVzdC9QSwMECgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAB0ZXN0L3Rlc3QuY2luY2x1ZGUgPHN0ZGlvLmg+CgppbnQgbWFpbih2b2lkKSB7CiAgICBpbnQgbnVtOwogICAgcHJpbnRmKCJIZWxsbyB3b3JsZCEgR2l2ZSBtZSBhbiBpbnRlZ2VyOlxuIik7CiAgICBzY2FuZigiJWQiLCAmbnVtKTsKICAgIHByaW50ZigiVGhhbmtzISBJJ3ZlIGFsd2F5cyBiZWVuIGZvbmQgb2YgJWQuXG4iLCBudW0pOwogICAgcmV0dXJuIDA7Cn0KUEsBAhQACgAAAAAAe4WFSQAAAAAAAAAAAAAAAAUAAAAAAAAAAAAQAAAAAAAAAHRlc3QvUEsBAhQACgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAAAAAAAAAAAAAAAIwAAAHRlc3QvdGVzdC5jUEsFBgAAAAACAAIAbAAAABEBAAAAAA=="}}
+received request from 172.31.8.184#
+project id is 6
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 6):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 172.31.8.184 at 2016-12-06 00:05:01 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>7, "options"=>nil, "input"=>"UEsDBAoAAAAAAHuFhUkAAAAAAAAAAAAAAAAFAAAAdGVzdC9QSwMECgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAB0ZXN0L3Rlc3QuY2luY2x1ZGUgPHN0ZGlvLmg+CgppbnQgbWFpbih2b2lkKSB7CiAgICBpbnQgbnVtOwogICAgcHJpbnRmKCJIZWxsbyB3b3JsZCEgR2l2ZSBtZSBhbiBpbnRlZ2VyOlxuIik7CiAgICBzY2FuZigiJWQiLCAmbnVtKTsKICAgIHByaW50ZigiVGhhbmtzISBJJ3ZlIGFsd2F5cyBiZWVuIGZvbmQgb2YgJWQuXG4iLCBudW0pOwogICAgcmV0dXJuIDA7Cn0KUEsBAhQACgAAAAAAe4WFSQAAAAAAAAAAAAAAAAUAAAAAAAAAAAAQAAAAAAAAAHRlc3QvUEsBAhQACgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAAAAAAAAAAAAAAAIwAAAHRlc3QvdGVzdC5jUEsFBgAAAAACAAIAbAAAABEBAAAAAA==", "api"=>{"id"=>7, "options"=>nil, "input"=>"UEsDBAoAAAAAAHuFhUkAAAAAAAAAAAAAAAAFAAAAdGVzdC9QSwMECgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAB0ZXN0L3Rlc3QuY2luY2x1ZGUgPHN0ZGlvLmg+CgppbnQgbWFpbih2b2lkKSB7CiAgICBpbnQgbnVtOwogICAgcHJpbnRmKCJIZWxsbyB3b3JsZCEgR2l2ZSBtZSBhbiBpbnRlZ2VyOlxuIik7CiAgICBzY2FuZigiJWQiLCAmbnVtKTsKICAgIHByaW50ZigiVGhhbmtzISBJJ3ZlIGFsd2F5cyBiZWVuIGZvbmQgb2YgJWQuXG4iLCBudW0pOwogICAgcmV0dXJuIDA7Cn0KUEsBAhQACgAAAAAAe4WFSQAAAAAAAAAAAAAAAAUAAAAAAAAAAAAQAAAAAAAAAHRlc3QvUEsBAhQACgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAAAAAAAAAAAAAAAIwAAAHRlc3QvdGVzdC5jUEsFBgAAAAACAAIAbAAAABEBAAAAAA=="}}
+received request from 172.31.8.184#
+project id is 7
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 7):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 155.99.10.156 at 2016-12-06 00:05:58 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>21, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA==", "api"=>{"id"=>21, "options"=>nil, "input"=>"UEsDBAoAAAAAANeUgUn0Ty6vSwAAAEsAAAAIAAAAc2ltcGxlLmMvKiBIZWxsbyBXb3JsZCBwcm9ncmFtICovCgojaW5jbHVkZQoKbWFpbigpCnsKICAgIHByaW50ZigiSGVsbG8gV29ybGQiKTsKfQpQSwMECgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAABfX01BQ09TWC9QSwMECgAAAAAA15SBSRrkU4doAQAAaAEAABMAAABfX01BQ09TWC8uX3NpbXBsZS5jAAUWBwACAABNYWMgT1MgWCAgICAgICAgAAIAAAAJAAAAMgAAATYAAAACAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQVRUUgAAAAAAAAFoAAAA4AAAAIgAAAAAAAAAAAAAAAAAAAACAAAA4AAAAA8AABdjb20uYXBwbGUuVGV4dEVuY29kaW5nAAAAAAAA7wAAAHkAADdjb20uYXBwbGUubWV0YWRhdGE6a01ETGFiZWxfaWN3ZHhnemRkMmk1b2h6cmpiaDZnYXJpYXUAAAB1dGYtODsxMzQyMTc5ODTy6LnzYFpZQENw59YWR+nTjn7K9Y9addCkDhIeyCcAXXgwnoa2PFP462A9gtz3IqiZGrBGElFqmzJFnOWwDwaS/yTXRs09OafcfDNrDQwkvTBXKc/11GQU/ufRxKw3m1gkpJbWpYastNJtcMS2WQuHyvXOUq0olzneUEsBAhQACgAAAAAA15SBSfRPLq9LAAAASwAAAAgAAAAAAAAAAAAAAAAAAAAAAHNpbXBsZS5jUEsBAhQACgAAAAAA4ZSBSQAAAAAAAAAAAAAAAAkAAAAAAAAAAAAQAAAAcQAAAF9fTUFDT1NYL1BLAQIUAAoAAAAAANeUgUka5FOHaAEAAGgBAAATAAAAAAAAAAAAAAAAAJgAAABfX01BQ09TWC8uX3NpbXBsZS5jUEsFBgAAAAADAAMArgAAADECAAAAAA=="}}
+received request from 155.99.10.156#
+project id is 21
+simple.c:3:9: error: expected "FILENAME" or <FILENAME>
+#include
+        ^
+simple.c:5:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+simple.c:7:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello World");
+    ^
+simple.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 warnings and 1 error generated.
+
+Error invoking command:
+clang -c -emit-llvm -O0 -g -gcolumn-info -I/usr/local/share/smack/include -DMEMORY_MODEL_NO_REUSE_IMPLS -o /home/ubuntu/projects/21/simple-cRgT5i.bc simple.c
+clang returned non-zero.
+posting to 155.99.10.156:3000/projects/21/receive_service_output
+21
+Completed 200 OK in 267ms (Views: 0.2ms)
+
+
+Started POST "/job_started" for 172.31.8.184 at 2016-12-06 00:06:32 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>8, "options"=>nil, "input"=>"UEsDBAoAAAAAAHuFhUkAAAAAAAAAAAAAAAAFAAAAdGVzdC9QSwMECgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAB0ZXN0L3Rlc3QuY2luY2x1ZGUgPHN0ZGlvLmg+CgppbnQgbWFpbih2b2lkKSB7CiAgICBpbnQgbnVtOwogICAgcHJpbnRmKCJIZWxsbyB3b3JsZCEgR2l2ZSBtZSBhbiBpbnRlZ2VyOlxuIik7CiAgICBzY2FuZigiJWQiLCAmbnVtKTsKICAgIHByaW50ZigiVGhhbmtzISBJJ3ZlIGFsd2F5cyBiZWVuIGZvbmQgb2YgJWQuXG4iLCBudW0pOwogICAgcmV0dXJuIDA7Cn0KUEsBAhQACgAAAAAAe4WFSQAAAAAAAAAAAAAAAAUAAAAAAAAAAAAQAAAAAAAAAHRlc3QvUEsBAhQACgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAAAAAAAAAAAAAAAIwAAAHRlc3QvdGVzdC5jUEsFBgAAAAACAAIAbAAAABEBAAAAAA==", "api"=>{"id"=>8, "options"=>nil, "input"=>"UEsDBAoAAAAAAHuFhUkAAAAAAAAAAAAAAAAFAAAAdGVzdC9QSwMECgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAB0ZXN0L3Rlc3QuY2luY2x1ZGUgPHN0ZGlvLmg+CgppbnQgbWFpbih2b2lkKSB7CiAgICBpbnQgbnVtOwogICAgcHJpbnRmKCJIZWxsbyB3b3JsZCEgR2l2ZSBtZSBhbiBpbnRlZ2VyOlxuIik7CiAgICBzY2FuZigiJWQiLCAmbnVtKTsKICAgIHByaW50ZigiVGhhbmtzISBJJ3ZlIGFsd2F5cyBiZWVuIGZvbmQgb2YgJWQuXG4iLCBudW0pOwogICAgcmV0dXJuIDA7Cn0KUEsBAhQACgAAAAAAe4WFSQAAAAAAAAAAAAAAAAUAAAAAAAAAAAAQAAAAAAAAAHRlc3QvUEsBAhQACgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAAAAAAAAAAAAAAAIwAAAHRlc3QvdGVzdC5jUEsFBgAAAAACAAIAbAAAABEBAAAAAA=="}}
+received request from 172.31.8.184#
+project id is 8
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 8):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'
+Started POST "/job_started" for 172.31.8.184 at 2016-12-06 00:09:37 +0000
+Processing by ApiController#receive_project_input as JSON
+  Parameters: {"id"=>9, "options"=>nil, "input"=>"UEsDBAoAAAAAAHuFhUkAAAAAAAAAAAAAAAAFAAAAdGVzdC9QSwMECgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAB0ZXN0L3Rlc3QuY2luY2x1ZGUgPHN0ZGlvLmg+CgppbnQgbWFpbih2b2lkKSB7CiAgICBpbnQgbnVtOwogICAgcHJpbnRmKCJIZWxsbyB3b3JsZCEgR2l2ZSBtZSBhbiBpbnRlZ2VyOlxuIik7CiAgICBzY2FuZigiJWQiLCAmbnVtKTsKICAgIHByaW50ZigiVGhhbmtzISBJJ3ZlIGFsd2F5cyBiZWVuIGZvbmQgb2YgJWQuXG4iLCBudW0pOwogICAgcmV0dXJuIDA7Cn0KUEsBAhQACgAAAAAAe4WFSQAAAAAAAAAAAAAAAAUAAAAAAAAAAAAQAAAAAAAAAHRlc3QvUEsBAhQACgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAAAAAAAAAAAAAAAIwAAAHRlc3QvdGVzdC5jUEsFBgAAAAACAAIAbAAAABEBAAAAAA==", "api"=>{"id"=>9, "options"=>nil, "input"=>"UEsDBAoAAAAAAHuFhUkAAAAAAAAAAAAAAAAFAAAAdGVzdC9QSwMECgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAB0ZXN0L3Rlc3QuY2luY2x1ZGUgPHN0ZGlvLmg+CgppbnQgbWFpbih2b2lkKSB7CiAgICBpbnQgbnVtOwogICAgcHJpbnRmKCJIZWxsbyB3b3JsZCEgR2l2ZSBtZSBhbiBpbnRlZ2VyOlxuIik7CiAgICBzY2FuZigiJWQiLCAmbnVtKTsKICAgIHByaW50ZigiVGhhbmtzISBJJ3ZlIGFsd2F5cyBiZWVuIGZvbmQgb2YgJWQuXG4iLCBudW0pOwogICAgcmV0dXJuIDA7Cn0KUEsBAhQACgAAAAAAe4WFSQAAAAAAAAAAAAAAAAUAAAAAAAAAAAAQAAAAAAAAAHRlc3QvUEsBAhQACgAAAAAAOkwqR2AjL0bFAAAAxQAAAAsAAAAAAAAAAAAAAAAAIwAAAHRlc3QvdGVzdC5jUEsFBgAAAAACAAIAbAAAABEBAAAAAA=="}}
+received request from 172.31.8.184#
+project id is 9
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms)
+
+
+  
+Errno::EEXIST (File exists @ dir_s_mkdir - 9):
+  
+app/controllers/api_controller.rb:23:in `mkdir'
+app/controllers/api_controller.rb:23:in `receive_project_input'

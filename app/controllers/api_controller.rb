@@ -60,6 +60,8 @@ class ApiController < ActionController::API
 	puts 'Error while sending service output'
         puts e.message
     end
+    FileUtils.rm_rf(params[:id].to_s)
+    Dir.chdir(Rails.root)   
   end
 end
 
