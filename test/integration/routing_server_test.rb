@@ -1,0 +1,1 @@
+class RoutingServerTest < ActionDispatch::Test
