@@ -38,7 +38,6 @@ class Project
     self.output = r.read
     r.close
     self.completed = true
-    yield
   end
 
   def post_service_output
