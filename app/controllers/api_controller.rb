@@ -13,9 +13,9 @@ class ApiController < ActionController::API
       request.remote_ip
     )
 
-    @project.run do
+    @project.run
     @project.post_service_output
-     @project.remove_project_directory
+    @project.remove_project_directory
     FileUtils.rm_rf(params[:id].to_s)
     Dir.chdir(Rails.root)   
   end
