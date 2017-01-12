@@ -4,7 +4,7 @@ require 'rest-client'
 class ApiController < ActionController::API
 
   def receive_project_input
-
+  
   Thread.new do 
     @project = Project.new(
       params[:id].to_s,
@@ -26,6 +26,6 @@ class ApiController < ActionController::API
     :eta => 5000
      }
 
-
+  end
 end
 
