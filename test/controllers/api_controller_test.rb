@@ -9,14 +9,12 @@ class APIControllerTest < ActionDispatch::IntegrationTest
     self.zip_test_project
     self.post_test_request
     assert_equal 200, status
-    assert_equal '2', body['id']
+    puts "Response JSON Received:"
+    puts body.to_s
     body = JSON.parse(response.body)
-    actual_output = self.get_actual_output
-    Dir.chdir(base_directory)
-    expected_output = get_expected_output
-    assert_equal actual_output.to_s, expected_output
+    assert_equal '2', body['id']
+    
   end
-
 
   def zip_test_project
     Dir.chdir('test/resources')
@@ -40,7 +38,7 @@ class APIControllerTest < ActionDispatch::IntegrationTest
   end
 
   def get_actual_output
-    output =  Base64.strict_decode64( body['output'] )
+    output =  Base64.strict_decode64( JSON.parse(body)['output'] )
     actual_output = Zip::InputStream.open(StringIO.new(output)) { |io| 
       io.get_next_entry
       io.read
