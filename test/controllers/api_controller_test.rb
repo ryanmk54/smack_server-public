@@ -17,7 +17,6 @@ class APIControllerTest < ActionDispatch::IntegrationTest
     assert_equal actual_output.to_s, expected_output
   end
 
-  private
 
   def zip_test_project
     Dir.chdir('test/resources')
