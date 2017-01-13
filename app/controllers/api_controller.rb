@@ -23,7 +23,7 @@ class ApiController < ActionController::API
     render :json => {
       :id => params[:id].to_s,
       :output => 'pending',
-      :eta => 5000
+      :eta => 500
        }
 
   end
