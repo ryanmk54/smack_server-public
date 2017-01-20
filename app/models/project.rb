@@ -9,13 +9,13 @@ class Project
   attr_accessor :id, :options, :path, :output, :return_ip, :completed
 
   def initialize( id, options, code, return_ip )
-    self.id = id
-    self.options = options
-    self.path = Rails.root.join('public', 'system', 'projects', self.id.to_s)
-    self.output = nil
-    self.return_ip = return_ip
-    self.completed = false
-    self.write_to_file_system( code )
+    @id = id
+    @options = options
+    @path = Rails.root.join('public', 'system', 'projects', self.id.to_s)
+    @output = nil
+    @return_ip = return_ip
+    @completed = false
+    @write_to_file_system( code )
   end
 
   def run
@@ -32,39 +32,22 @@ class Project
     filenames = filenames.map { |f| File.join(self.path, f) }
     filenames.each { |f| puts f }
     r, w = IO.pipe
+    self.start_time = Time.now.getutc
     pid = spawn("smack #{filenames.join(' ')};", :out => w)
     Process.waitpid( pid )
     w.close
     self.output = r.read
     r.close
     self.completed = true
+    self.finish_time = Time.now.getutc
     yield
   end
 
-  def post_service_output
-    if self.completed
-      begin
-        post_url = File.join(
-          self.return_ip + ':3000',
-          'projects',
-          self.id,
-          'receive_service_output'
-        )
-        RestClient.post(post_url,
-        {
-          :id => self.id,
-          :output =>self.output
-        }.to_json,
-        {
-          content_type: :json,
-          accept_headers: :json
-        })
-      rescue => e
-        puts 'Error while sending service output'
-        puts e.message
-      end
-    end
-  end
+  def 
+
+  # def post_service_output
+
+  # end
 
   def write_to_file_system( code )
     FileUtils.mkdir(self.path) unless File.directory?(self.path)
