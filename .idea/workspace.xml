@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95f770cf-be5c-464e-a602-d435923eca73" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/smack_server.iml" afterPath="$PROJECT_DIR$/.idea/smack_server.iml" />
@@ -9,6 +10,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/api_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/api_controller_test.rb" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api_controller.rb" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="smack_server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,8 +87,13 @@
           <file leaf-file-name="api_controller.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/api_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
                 <state relative-caret-position="720">
                   <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+=======
+                <state relative-caret-position="277">
+                  <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+>>>>>>> Stashed changes
                   <folding />
                 </state>
               </provider>
@@ -703,6 +713,11 @@
       <workItem from="1480276906635" duration="785000" />
       <workItem from="1480454056139" duration="1988000" />
       <workItem from="1480456079594" duration="707000" />
+<<<<<<< Updated upstream
+=======
+      <workItem from="1481045554912" duration="5328000" />
+      <workItem from="1484848174572" duration="2801000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -739,7 +754,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="30017000" />
+=======
+    <option name="totallyTimeSpent" value="38146000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="55" width="3202" height="1746" extended-state="6" />
@@ -1139,8 +1158,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/api_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1296">
           <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+=======
+        <state relative-caret-position="277">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
