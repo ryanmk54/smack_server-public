@@ -2,6 +2,7 @@ require 'zip'
 require 'zlib'
 require 'stringio'
 require 'fileutils'
+require 'rest-client'
 
 
 class Project
@@ -11,11 +12,11 @@ class Project
   def initialize( id, options, code, return_ip )
     @id = id
     @options = options
-    @path = Rails.root.join('public', 'system', 'projects', self.id.to_s)
+    @path = Rails.root.join('public', 'system', 'projects', @id.to_s)
     @output = nil
     @return_ip = return_ip
     @completed = false
-    @write_to_file_system( code )
+    write_to_file_system(code)
   end
 
   def run
@@ -29,24 +30,35 @@ class Project
       end    
     }
 
-    filenames = filenames.map { |f| File.join(self.path, f) }
+    filenames = filenames.map { |f| File.join(@path, f) }
     filenames.each { |f| puts f }
     r, w = IO.pipe
-    self.start_time = Time.now.getutc
+    start_time = Time.now.getutc.to_i
     pid = spawn("smack #{filenames.join(' ')};", :out => w)
     Process.waitpid( pid )
     w.close
     self.output = r.read
     r.close
     self.completed = true
-    self.finish_time = Time.now.getutc
+    finish_time = Time.now.getutc.to_i
+    @time_elapsed = finish_time - start_time
   end
 
-  def 
-
-  # def post_service_output
-
-  # end
+  def post_service_output
+    begin
+      post_url = "#{@return_ip}:3000/projects/#{@id}/receive_service_output"
+      puts "posting to #{post_url}"
+      RestClient.post(post_url,
+        {
+            :id => @id,
+            :output => @output,
+            :time_elapsed => @time_elapsed
+        }.to_json, {content_type: :json, accept_headers: :json})
+    rescue => e
+      puts 'Error while sending service output'
+      puts e.message
+    end
+  end
 
   def write_to_file_system( code )
     FileUtils.mkdir(self.path) unless File.directory?(self.path)
@@ -62,15 +74,11 @@ class Project
     File.delete(File.join(self.path, 'content'))
   end
 
-  def prime_project_directory
-  end
-
   def remove_project_directory
     FileUtils.rm_rf(self.path)
   end
 
 end
-
 
 # needed for unzipping from IOStream
 class StringIO
