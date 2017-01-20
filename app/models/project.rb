@@ -40,7 +40,6 @@ class Project
     r.close
     self.completed = true
     self.finish_time = Time.now.getutc
-    yield
   end
 
   def 

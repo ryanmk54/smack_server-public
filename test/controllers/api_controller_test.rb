@@ -3,24 +3,20 @@ require 'base64'
 require 'zip'
 
 class APIControllerTest < ActionDispatch::IntegrationTest
-  def setup
-    
-    if Dir.exists?('/home/ubuntu/projects/2')  
-       base_directory = Dir.pwd
-      Dir.chdir('/home/ubuntu/projects/2')
-      Dir.entries(Dir.pwd).each do |filename|
-        if (filename != '.' and filename != '..') 
-          File.delete(filename)
-        end
-      end
-      Dir.chdir('/home/ubuntu/projects')
-      Dir.delete('2')
-      Dir.chdir(base_directory)
-    end
-  end
 
   def test_receive_project
-    base_directory = Dir.pwd
+    base_directory = Rails.root
+    self.zip_test_project
+    self.post_test_request
+    assert_equal 200, status
+    puts "Response JSON Received:"
+    puts body.to_s
+    body = JSON.parse(response.body)
+    assert_equal '2', body['id']
+    
+  end
+
+  def zip_test_project
     Dir.chdir('test/resources')
     Zip::File.open('contents.zip', Zip::File::CREATE) {
         |zipfile|
@@ -32,20 +28,26 @@ class APIControllerTest < ActionDispatch::IntegrationTest
         )
       }
     }
+  end
+
+  def post_test_request
     f = open('contents.zip', 'a+')
     encoded_project = Base64.strict_encode64(f.read)
     f.close
     post '/job_started', params: {'id': 2, 'options': {}, 'code': encoded_project }
-    assert_equal 200, status
-    body = JSON.parse(response.body)
-    assert_equal '2', body['id']
-    output =  Base64.strict_decode64( body['output'] )
+  end
+
+  def get_actual_output
+    output =  Base64.strict_decode64( JSON.parse(body)['output'] )
     actual_output = Zip::InputStream.open(StringIO.new(output)) { |io| 
       io.get_next_entry
       io.read
      }
-    Dir.chdir(base_directory)
-    expected_output = File.open('test/resources/simple_output') { |file| file.read}
-    assert_equal actual_output.to_s, expected_output
+     actual_output
   end
+
+  def get_expected_output
+    expected_output = File.open('test/resources/simple_output') { |file| file.read}
+  end
+
 end
