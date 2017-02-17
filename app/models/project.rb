@@ -34,7 +34,7 @@ class Project
     filenames.each { |f| puts f }
     r, w = IO.pipe
     start_time = Time.now.getutc.to_i
-    pid = spawn("smack #{filenames.join(' ')};", :out => w)
+    pid = spawn("smack #{filenames.join(' ')} #{@options};", :out => w)
     Process.waitpid( pid )
     w.close
     self.output = r.read
