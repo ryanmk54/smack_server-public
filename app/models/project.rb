@@ -7,14 +7,15 @@ require 'rest-client'
 
 class Project
 
-  attr_accessor :id, :options, :path, :output, :return_ip, :completed
+  attr_accessor :id, :options, :path, :output, :return_ip, :return_port, :completed
 
-  def initialize( id, options, code, return_ip )
+  def initialize( id, options, code, return_ip, return_port)
     @id = id
     @options = options
     @path = Rails.root.join('public', 'system', 'projects', @id.to_s)
     @output = nil
     @return_ip = return_ip
+    @return_port = return_port
     @completed = false
     write_to_file_system(code)
   end
@@ -46,7 +47,7 @@ class Project
 
   def post_service_output
     begin
-      post_url = "#{@return_ip}:3000/projects/#{@id}/receive_service_output"
+      post_url = "#{@return_ip}:8080/projects/#{@id}/receive_service_output"
       puts "posting to #{post_url}"
       RestClient.post(post_url,
         {

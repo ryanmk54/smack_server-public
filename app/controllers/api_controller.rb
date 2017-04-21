@@ -11,7 +11,8 @@ class ApiController < ActionController::API
         params[:id].to_s,
         params[:options],
         Base64.strict_decode64( params[:input] ),
-        request.remote_ip
+        request.remote_ip,
+	request.port
       )
 
       @project.run
@@ -26,7 +27,7 @@ class ApiController < ActionController::API
       :output => 'pending',
       :eta => 500
        }
-
+    puts 'response sent'
   end
 
 end
