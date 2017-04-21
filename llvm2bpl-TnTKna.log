@@ -1,0 +1,2 @@
+llvm2bpl: Unknown command line argument '-debug'.  Try: 'llvm2bpl -help'
+llvm2bpl: Did you mean '-help'?
