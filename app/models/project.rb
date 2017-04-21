@@ -47,7 +47,7 @@ class Project
 
   def post_service_output
     begin
-      post_url = "#{@return_ip}:8080/projects/#{@id}/receive_service_output"
+      post_url = "#{@return_ip}:#{@return_port}/projects/#{@id}/receive_service_output"
       puts "posting to #{post_url}"
       RestClient.post(post_url,
         {

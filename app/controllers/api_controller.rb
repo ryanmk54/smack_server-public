@@ -12,7 +12,7 @@ class ApiController < ActionController::API
         params[:options],
         Base64.strict_decode64( params[:input] ),
         request.remote_ip,
-	request.port
+	params[:return_port]
       )
 
       @project.run
